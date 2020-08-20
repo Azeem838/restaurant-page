@@ -1,5 +1,6 @@
 const homePage = () => {
   const content = document.getElementById('content');
+  const frag = document.createDocumentFragment();
 
   const subHeading = document.createElement('h3');
   subHeading.innerHTML = 'Chef Rob Hanzer perfectly cooks chickens in a giant rotisserie oven, but the birds are equally delicious roasted on a rack in a home oven.';
@@ -10,9 +11,10 @@ const homePage = () => {
   const image = document.createElement('img');
   image.setAttribute('src', './roast-chicken.jpg');
 
-  content.appendChild(image);
-  content.appendChild(subHeading);
-  content.appendChild(desc);
+  frag.appendChild(image);
+  frag.appendChild(subHeading);
+  frag.appendChild(desc);
+  content.appendChild(frag);
 };
 
 export default homePage;

@@ -1,5 +1,6 @@
 const contact = () => {
   const content = document.getElementById('content');
+  const frag = document.createDocumentFragment();
 
   const location = document.createElement('h2');
   const phoneNum = document.createElement('h2');
@@ -11,9 +12,10 @@ const contact = () => {
 
   openHours.innerHTML = 'Open Hours<p>Mon-Fri: 11AM-11pm</p>';
 
-  content.appendChild(location);
-  content.appendChild(phoneNum);
-  content.appendChild(openHours);
+  frag.appendChild(location);
+  frag.appendChild(phoneNum);
+  frag.appendChild(openHours);
+  content.appendChild(frag);
 };
 
 export default contact;

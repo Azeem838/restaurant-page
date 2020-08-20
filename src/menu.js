@@ -1,5 +1,6 @@
 const menu = () => {
   const content = document.getElementById('content');
+  const frag = document.createDocumentFragment();
 
   const pastaArr = [
     'Zuppa di Zucca',
@@ -41,10 +42,11 @@ const menu = () => {
   const mainHead = document.createElement('h2');
   mainHead.innerHTML = 'Main Meals';
 
-  content.appendChild(pastaHead);
-  content.appendChild(pastaUl);
-  content.appendChild(mainHead);
-  content.appendChild(mainUl);
+  frag.appendChild(pastaHead);
+  frag.appendChild(pastaUl);
+  frag.appendChild(mainHead);
+  frag.appendChild(mainUl);
+  content.appendChild(frag);
 };
 
 export default menu;
