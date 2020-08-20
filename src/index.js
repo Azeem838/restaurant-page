@@ -2,27 +2,23 @@ import homePage from './home';
 import menu from './menu';
 import contact from './contact';
 
-function clearContent() {
-  const content = document.getElementById('content');
-  content.innerHTML = '';
-}
+const content = document.getElementById('content');
+content.onload = homePage();
 
 const homeBtn = document.getElementById('tab1');
 homeBtn.addEventListener('click', () => {
-  clearContent();
+  content.innerHTML = '';
   homePage();
 });
 
 const menuBtn = document.getElementById('tab2');
 menuBtn.addEventListener('click', () => {
-  clearContent();
+  content.innerHTML = '';
   menu();
 });
 
 const contactBtn = document.getElementById('tab3');
 contactBtn.addEventListener('click', () => {
-  clearContent();
+  content.innerHTML = '';
   contact();
 });
-
-console.log('Hello');
