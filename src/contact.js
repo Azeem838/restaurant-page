@@ -1,5 +1,5 @@
-const contact = (() => {
-  const content = document.getElementById('contact');
+const contact = () => {
+  const content = document.getElementById('content');
 
   const location = document.createElement('h2');
   const phoneNum = document.createElement('h2');
@@ -14,6 +14,6 @@ const contact = (() => {
   content.appendChild(location);
   content.appendChild(phoneNum);
   content.appendChild(openHours);
-})();
+};
 
 export default contact;

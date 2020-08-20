@@ -1,5 +1,5 @@
-const menu = (() => {
-  const content = document.getElementById('menu');
+const menu = () => {
+  const content = document.getElementById('content');
 
   const pastaArr = [
     'Zuppa di Zucca',
@@ -45,6 +45,6 @@ const menu = (() => {
   content.appendChild(pastaUl);
   content.appendChild(mainHead);
   content.appendChild(mainUl);
-})();
+};
 
 export default menu;

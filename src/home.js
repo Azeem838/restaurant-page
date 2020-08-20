@@ -1,5 +1,5 @@
-const homePage = (() => {
-  const content = document.getElementById('home');
+const homePage = () => {
+  const content = document.getElementById('content');
 
   const subHeading = document.createElement('h3');
   subHeading.innerHTML =
@@ -15,6 +15,6 @@ const homePage = (() => {
   content.appendChild(image);
   content.appendChild(subHeading);
   content.appendChild(desc);
-})();
+};
 
 export default homePage;
