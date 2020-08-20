@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Page</title>
+    <link href="tabsy.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Restaurant Page</h1>
+    <div class="tabsy">
+      <input type="radio" id="tab1" name="tab" checked />
+      <label class="tabButton" for="tab1">Home</label>
+      <div class="tab">
+        <div id="home" class="content"></div>
+      </div>
+      <input type="radio" id="tab2" name="tab" checked />
+      <label class="tabButton" for="tab2">Menu</label>
+      <div class="tab">
+        <div id="menu" class="content"></div>
+      </div>
+      <input type="radio" id="tab3" name="tab" checked />
+      <label class="tabButton" for="tab3">Contact</label>
+      <div class="tab">
+        <div id="contact" class="content"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
