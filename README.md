@@ -16,7 +16,7 @@ This app was built with JavaScript, HTML and CSS
 
 ## Live Demo
 
-_NOT AVAILABLE UNTIL MERGED WITH MASTER_
+[Live Demo Link](http://azeemahmed.me/restaurant-page/)
 
 ## Getting Started
 
